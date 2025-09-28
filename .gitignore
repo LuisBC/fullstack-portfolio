@@ -1,0 +1,13 @@
+# Node
+node_modules
+pnpm-lock.yaml
+*.log
+# Next.js
+.next/
+# Expo
+.expo/
+.expo-shared/
+# OS
+.DS_Store
+# Java
+backend/target/

@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "web",
+    "mobile"
+  ],
+  "scripts": {
+    "dev": "concurrently -k \"pnpm dev:web\" \"pnpm dev:mobile\"",
+    "dev:web": "pnpm --filter web dev",
+    "build:web": "pnpm --filter web build",
+    "start:web": "pnpm --filter web start",
+    "dev:mobile": "pnpm --filter mobile start",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
